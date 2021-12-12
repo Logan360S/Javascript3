@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Root Beer Float Maker</title>
+</head>
+<body>
+    <h1>Root Beer Float Maker</h1>
+    <form name="floatForm" id="floatForm" onsubmit="return false">
+        <fieldset id="iceCreamBox">
+            <legend id="iceCreamTitle">Ice Creams</legend>
+            <input type="checkbox" id="iceCreamVanilla" name="iceCreamSelect" value="vanilla"/>
+            <label for="iceCreamVanilla">vanilla</label>
+            <br>
+            <input type="checkbox" id="iceCreamChocolate" name="iceCreamSelect" value="chocolate"/>
+            <label for="iceCreamChocolate">chocolate</label>
+            <br>
+            <input type="checkbox" id="iceCreamCoffee" name="iceCreamSelect" value="coffee"/>
+            <label for="iceCreamCoffee">coffee</label>
+            <br>
+        </fieldset>
+        <fieldset id="rootBeerBox">
+            <legend id="rootBeerTitle">Root Beers</legend>
+            <input type="radio" id="rootBeerBarqs" name="rootBeerSelect" value="Barq's" />
+            <label for="rootBeerBarqs">Barq's</label>
+            <br>
+            <input type="radio" id="rootBeerA&W" name="rootBeerSelect" value="A&W" />
+            <label for="rootBeerA&W">A&W</label>
+            <br>
+            <input type="radio" id="rootBeerDads" name="rootBeerSelect" value="Dad's" />
+            <label for="rootBeerDads">Dad's</label>
+            <br>
+            <input type="radio" id="rootBeerIBC" name="rootBeerSelect" value="IBC" />
+            <label for="rootBeerIBC">IBC</label>
+            <br>
+        </fieldset>
+        <br><br>
+        <input type="submit" id="submitButton" value="I'm ready to make my float!" />
+
+    </form>
+    <img src="Assets/rootbeerglass.PNG" width="250px" align="top"/>
+    <div id="outerborder">
+        <div id="output"></div>
+    </div>
+    <script type="text/javascript" src="js3.js"></script>
+</body>
+</html>
